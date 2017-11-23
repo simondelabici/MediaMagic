@@ -3,11 +3,9 @@ package org.kd1sgr.mediamagic.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 import java.io.File;
 
-@Entity
-public class Image {
+public abstract class MediaEntity {
 
     @Id
     @GeneratedValue
@@ -15,9 +13,9 @@ public class Image {
 
     private File filename;
 
-    public Image() {}
+    public MediaEntity() {}
 
-    public Image( File filename )
+    public MediaEntity(File filename )
     {
         this.filename = filename;
     }
