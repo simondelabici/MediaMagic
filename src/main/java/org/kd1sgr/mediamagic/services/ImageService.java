@@ -1,7 +1,7 @@
 package org.kd1sgr.mediamagic.services;
 
-import org.kd1sgr.mediamagic.model.CameraImageEntity;
-import org.kd1sgr.mediamagic.model.MediaEntity;
+import org.kd1sgr.mediamagic.model.CameraImageMediaEntity;
+import org.kd1sgr.mediamagic.model.OtherImageEntity;
 import org.kd1sgr.mediamagic.repository.ImageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,13 +18,18 @@ public class ImageService {
     public ImageService() {}
 
     @Transactional
-    public void saveImage(CameraImageEntity cameraImageEntity) {
+    public void saveOtherImage( OtherImageEntity otherImageEntity) {
+        imageRepository.save( otherImageEntity );
+    }
+
+    @Transactional
+    public void saveCameraImage(CameraImageMediaEntity cameraImageEntity) {
         imageRepository.save( cameraImageEntity );
     }
 
-    public List<CameraImageEntity> findImages() {
+    public List<CameraImageMediaEntity> findImages() {
 
-        return imageRepository.findImages();
+        return imageRepository.findCameraImages();
     }
 
 
