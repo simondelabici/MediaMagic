@@ -44,7 +44,6 @@ public class LibraryImageViewController
       viewModel.addAttribute( "banner", banner );
       viewModel.addAttribute( "year", year );
       viewModel.addAttribute( "month", month );
-      viewModel.addAttribute( "orientation", OrientationVO.ROTATE_CLOCKWISE_90.toString() );
 
       List<CameraImage> list = imageService.findCameraImagesByYearAndMonth( yearMonth );
 
@@ -64,6 +63,7 @@ public class LibraryImageViewController
          viewModel.addAttribute("cameraMaker", currentImage.getCamera().getMake());
          viewModel.addAttribute("cameraModel", currentImage.getCamera().getModel());
          viewModel.addAttribute("imageResolution", currentImage.getResolutionVO().toString());
+         viewModel.addAttribute( "orientation",  currentImage.getOrientationVO().toString() );
       }
       // Add the next image information (if the current image is not the last image in the sequence)
       if ( index < list.size() - 1 )

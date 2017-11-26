@@ -1,21 +1,39 @@
 package org.kd1sgr.mediamagic.model;
 
+import org.apache.commons.lang3.Validate;
+
 public enum OrientationVO {
-    ROTATE_NONE,
-    ROTATE_CLOCKWISE_90,
-    ROTATE_ANTICLOCKWISE_90,
-    ROTATE_180;
+
+    ROTATE_NONE( 0 ),
+    ROTATE_CLOCKWISE_90( Math.PI/2),
+    ROTATE_ANTICLOCKWISE_90( -Math.PI/2 ),
+    ROTATE_180( Math.PI );
+
+    private final double radians;
+
+    OrientationVO( double radians )
+    {
+        this.radians = radians;
+    }
 
     public static boolean isKnownValue( String valueCandidate )
     {
-        for ( ImageSize value : ImageSize.values() )
+        Validate.notNull(valueCandidate);
+        Validate.notBlank(valueCandidate);
+
+        for ( OrientationVO values : OrientationVO.values() )
         {
-            if ( value.name().equals( valueCandidate ) )
+            if ( values.toString().equals( valueCandidate ) )
             {
                 return true;
             }
         }
         return false;
+    }
+
+    public double getDegrees()
+    {
+        return Math.toDegrees( radians );
     }
 
 }

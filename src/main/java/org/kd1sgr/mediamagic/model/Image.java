@@ -6,7 +6,7 @@ import java.io.File;
 @MappedSuperclass
 public abstract class Image extends Media {
 
-    private final OrientationVO orientationVO;
+    private OrientationVO orientationVO;
     private final ResolutionVO resolutionVO;
 
     public Image()
@@ -21,7 +21,6 @@ public abstract class Image extends Media {
         super( filename );
         this.resolutionVO = resolutionVO;
         this.orientationVO = orientationVO;
-
     }
 
     public ResolutionVO getResolutionVO()
@@ -31,6 +30,11 @@ public abstract class Image extends Media {
 
     public OrientationVO getOrientationVO() {
         return orientationVO;
+    }
+
+    public void setOrientationVO( OrientationVO newOrientationVO )
+    {
+        this.orientationVO = newOrientationVO;
     }
 
     @Override

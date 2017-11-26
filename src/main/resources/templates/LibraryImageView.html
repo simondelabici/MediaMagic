@@ -143,15 +143,15 @@
 
    <div id="rotate">
      <!-- <th:if = "${ pageContext.request.isUserInRole( 'FAMILY' ) }"> -->
-         <button type="button" onclick="sendRotateRequest( 'ROTATE_NONE' );" name="orientation" value="ROTATE_NONE">No
-            Rotate
+         <button type="button" onclick="sendRotateRequest( 'ROTATE_NONE' );"
+                 name="orientation" value="ROTATE_NONE">No Rotate
          </button>
-         <button type="button" onclick="sendRotateRequest( 'ROTATE_ANTICLOCKWISE_90' );" name="orientation"
-                 value="ROTATE_ANTICLOCKWISE_90">Rotate
+         <button type="button" onclick="sendRotateRequest( 'ROTATE_ANTICLOCKWISE_90' );"
+                 name="orientation" value="ROTATE_ANTICLOCKWISE_90">Rotate
             Left
          </button>
-         <button type="button" onclick="sendRotateRequest( 'ROTATE_CLOCKWISE_90' );" name="orientation"
-                 value="ROTATE_CLOCKWISE_90">Rotate
+         <button type="button" onclick="sendRotateRequest( 'ROTATE_CLOCKWISE_90' );"
+                 name="orientation" value="ROTATE_CLOCKWISE_90">Rotate
             Right
          </button>
          <button type="button" onclick="sendRotateRequest( 'ROTATE_180' );" name="orientation" value="ROTATE_180">Rotate
@@ -251,7 +251,7 @@
 
     function sendRotateRequest(orientation) {
         newOrientation = orientation;
-        var url = "${pageContext.servletContext.contextPath}/resource/library/image/${props.current}";
+        var url = "[[@{|/resource/library/image/${currentImageId}}]]";
         var queryString = "?orientation=" + orientation;
         createXMLHttpRequest();
         xmlHttp.open("PUT", url + queryString, true);
