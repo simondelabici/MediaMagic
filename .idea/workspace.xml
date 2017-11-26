@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageMediaEntity.java" line="11" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/Image.java" line="6" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e9c2f20-1508-4b16-807f-e1068a461e57" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_adobe_xmp_xmpcore_5_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_drewnoakes_metadata_extractor_2_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraVO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OtherImageEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/resources/RsResourceLibraryImage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/MediaImporterService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraEntity.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImageEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImageMediaEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageMediaEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mediamagic.eap" afterPath="$PROJECT_DIR$/mediamagic.eap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_thymeleaf_thymeleaf_Release.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_thymeleaf_thymeleaf_testing_Release.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/controllers/rest/LibraryImageResourceController.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/resources/RsResourceLibraryImage.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImageMediaEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageMediaEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/Image.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/MediaEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/Media.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OtherImageEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OtherImage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java" afterPath="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageServiceTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MediaMagic.iml" afterPath="$PROJECT_DIR$/MediaMagic.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/Application.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/MediaEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/MediaEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraVO.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraVO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OrientationVO.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OrientationVO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ResolutionVO.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ResolutionVO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/repository/ImageRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/repository/ImageRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageService.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/MediaImporterService.java" afterPath="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/MediaImporterService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java" afterPath="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java" afterPath="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,35 +57,47 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="-487">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraImageMediaEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImageMediaEntity.java">
+      <file leaf-file-name="LibraryImageView.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/LibraryImageView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="45" />
+            <state relative-caret-position="-946">
+              <caret line="206" column="107" lean-forward="true" selection-start-line="206" selection-start-column="107" selection-end-line="206" selection-end-column="107" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1326#1327#0" expanded="true" />
-                <element signature="e#1355#1356#0" expanded="true" />
+                <marker date="1511707696284" expanded="true" signature="2636:2642" ph="July 1901" />
+                <marker date="1511707696284" expanded="true" signature="4600:4613" ph="abc" />
+                <marker date="1511707696284" expanded="true" signature="5035:5046" ph="Simon" />
+                <marker date="1511707696284" expanded="true" signature="5154:5165" ph="SimonsCamera" />
+                <marker date="1511707696284" expanded="true" signature="5273:5288" ph="1000 x 1000" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraVO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraVO.java">
+      <file leaf-file-name="ImageSenderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageSenderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="79" />
+            <state relative-caret-position="221">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageServiceTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageServiceTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="601">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,48 +105,28 @@
       <file leaf-file-name="MediaImporterServiceTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageMediaEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageMediaEntity.java">
+      <file leaf-file-name="ImageSenderServiceTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageSenderServiceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="32" column="81" lean-forward="false" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersistenceTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java">
+      <file leaf-file-name="LibraryImageViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/controllers/view/LibraryImageViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractEntityManagerFactoryBean.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.0.1.RELEASE/spring-orm-5.0.1.RELEASE-sources.jar!/org/springframework/orm/jpa/AbstractEntityManagerFactoryBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="383" column="0" lean-forward="false" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MediaImporterService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/MediaImporterService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-818">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="245">
+              <caret line="48" column="88" lean-forward="false" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageService.java">
+      <file leaf-file-name="LibraryImageResourceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/controllers/rest/LibraryImageResourceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="414">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,14 +146,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResolutionVO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ResolutionVO.java">
+      <file leaf-file-name="OrientationVO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OrientationVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="306">
               <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageSize.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageSize.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="29" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -182,7 +180,14 @@
     <findStrings>
       <find>mediamagic</find>
       <find>100</find>
+      <find>Pre</find>
+      <find>Message.INFO</find>
+      <find>ImageSer</find>
+      <find>Importing image</find>
     </findStrings>
+    <replaceStrings>
+      <replace>logger.info</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>C:\home\intellij_ws\MediaMagic</dir>
     </dirStrings>
@@ -204,26 +209,44 @@
         <option value="$PROJECT_DIR$/pomOld.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/245c69f3-413e-4420-9148-e9510f564c2a/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/Image.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/Media.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OrientationVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/resources/RsResourceLibraryImage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImageEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OtherImageEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/repository/ImageRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/MediaEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraEntity.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ResolutionVO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImageMediaEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageMediaEntity.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/PresentLibraryImageView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/PresentLibraryImageView.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/view/RsViewLibraryImage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/view/GreetingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OtherImage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageServiceTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageSenderServiceTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/resources/RsResourceLibraryImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/Media.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/view/LibraryImageViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/repository/ImageRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ResolutionVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageSenderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/MediaImporterService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/SizeVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageSize.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OrientationVO.java" />
+        <option value="/Thymeleaf URL Expressions Fragment (LibraryImageView.html:5750).thymes" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/controllers/rest/LibraryImageResource.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/LibraryImageView.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/controllers/view/LibraryImageViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/controllers/view/ViewLibraryImageController.java" />
       </list>
     </option>
   </component>
@@ -262,8 +285,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="1" />
+    <option name="x" value="2300" />
+    <option name="y" value="57" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
@@ -323,6 +346,35 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mediamagic" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MediaMagic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MediaMagic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mediamagic" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MediaMagic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MediaMagic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mediamagic" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MediaMagic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MediaMagic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mediamagic" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -354,6 +406,14 @@
               <item name="MediaMagic" type="b2602c69:ProjectViewProjectNode" />
               <item name="MediaMagic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MediaMagic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MediaMagic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -369,21 +429,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaMagic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaMagic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaMagic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaMagic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -400,7 +445,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ch.psi.git.autodeployer" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.23070018" />
     <property name="settings.editor.selected.configurable" value="SQL Dialects" />
@@ -414,12 +459,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\home\intellij_ws\MediaMagic\src\main\resources\static\css" />
       <recent name="C:\home\intellij_ws\MediaMagic\src\test\resources\org\kd1sgr\mediamagic" />
       <recent name="C:\home\intellij_ws\MediaMagic\src\test\resources\org\kd1sgr" />
       <recent name="C:\home\intellij_ws\MediaMagic\src\test\resources\org" />
       <recent name="C:\home\intellij_ws\MediaMagic\src\test\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="org.kd1sgr.mediamagic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -442,12 +489,87 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MediaImporterServiceTests.testScanFileTree">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.kd1sgr.mediamagic.Application" />
       <module name="MediaMagic" />
       <envs />
+    </configuration>
+    <configuration name="ImageSenderServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.kd1sgr.mediamagic.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MediaMagic" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.kd1sgr.mediamagic.services" />
+      <option name="MAIN_CLASS_NAME" value="org.kd1sgr.mediamagic.services.ImageSenderServiceTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ImageSenderServiceTests.testSendRawImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.kd1sgr.mediamagic.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MediaMagic" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.kd1sgr.mediamagic.services" />
+      <option name="MAIN_CLASS_NAME" value="org.kd1sgr.mediamagic.services.ImageSenderServiceTests" />
+      <option name="METHOD_NAME" value="testSendRawImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ImageServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.kd1sgr.mediamagic.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MediaMagic" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.kd1sgr.mediamagic.services" />
+      <option name="MAIN_CLASS_NAME" value="org.kd1sgr.mediamagic.services.ImageServiceTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="MediaImporterServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -487,56 +609,6 @@
       <option name="PACKAGE_NAME" value="org.kd1sgr.mediamagic.services" />
       <option name="MAIN_CLASS_NAME" value="org.kd1sgr.mediamagic.services.MediaImporterServiceTests" />
       <option name="METHOD_NAME" value="testScanFileTree" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="PersistenceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.kd1sgr.mediamagic.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="MediaMagic" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.kd1sgr.mediamagic.services" />
-      <option name="MAIN_CLASS_NAME" value="org.kd1sgr.mediamagic.services.PersistenceTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="PersistenceTests.testSaveImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.kd1sgr.mediamagic.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="MediaMagic" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.kd1sgr.mediamagic.services" />
-      <option name="MAIN_CLASS_NAME" value="org.kd1sgr.mediamagic.services.PersistenceTests" />
-      <option name="METHOD_NAME" value="testSaveImage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -630,19 +702,21 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PersistenceTests.testSaveImage" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PersistenceTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MediaImporterServiceTests.testScanFileTree" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MediaImporterServiceTests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ImageServiceTests" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MediaImporterServiceTests.testScanFileTree" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MediaImporterServiceTests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ImageSenderServiceTests.testSendRawImage" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ImageSenderServiceTests" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MediaImporterServiceTests.testScanFileTree" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MediaImporterServiceTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PersistenceTests.testSaveImage" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PersistenceTests" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ImageSenderServiceTests.testSendRawImage" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ImageSenderServiceTests" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MediaImporterServiceTests.testScanFileTree" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MediaImporterServiceTests" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ImageServiceTests" />
       </list>
     </recent_temporary>
   </component>
@@ -660,69 +734,69 @@
       <workItem from="1511128963122" duration="77000" />
       <workItem from="1511129079637" duration="598000" />
       <workItem from="1511129709471" duration="14458000" />
-      <workItem from="1511225400052" duration="24367000" />
+      <workItem from="1511225400052" duration="87914000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MediaImporterServiceTests - 2017.11.24 at 02h 56m 24s.xml">
+    <history-entry file="ImageSenderServiceTests - 2017.11.25 at 22h 00m 01s.xml">
+      <configuration name="ImageSenderServiceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageSenderServiceTests_testSendRawImage - 2017.11.25 at 20h 51m 19s.xml">
+      <configuration name="ImageSenderServiceTests.testSendRawImage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageSenderServiceTests_testSendRawImage - 2017.11.25 at 22h 03m 12s.xml">
+      <configuration name="ImageSenderServiceTests.testSendRawImage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageSenderServiceTests_testSendRawImage - 2017.11.25 at 22h 04m 23s.xml">
+      <configuration name="ImageSenderServiceTests.testSendRawImage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageServiceTests - 2017.11.25 at 19h 51m 55s.xml">
+      <configuration name="ImageServiceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageServiceTests - 2017.11.25 at 20h 35m 29s.xml">
+      <configuration name="ImageServiceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MediaImporterServiceTests - 2017.11.25 at 20h 35m 55s.xml">
       <configuration name="MediaImporterServiceTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaImporterServiceTests_testScanFileTree - 2017.11.24 at 02h 24m 49s.xml">
+    <history-entry file="MediaImporterServiceTests - 2017.11.25 at 20h 40m 54s.xml">
+      <configuration name="MediaImporterServiceTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MediaImporterServiceTests_testScanFileTree - 2017.11.25 at 21h 57m 36s.xml">
       <configuration name="MediaImporterServiceTests.testScanFileTree" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaImporterServiceTests_testScanFileTree - 2017.11.24 at 02h 49m 10s.xml">
-      <configuration name="MediaImporterServiceTests.testScanFileTree" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MediaImporterServiceTests_testScanFileTree - 2017.11.24 at 02h 59m 45s.xml">
-      <configuration name="MediaImporterServiceTests.testScanFileTree" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MediaImporterServiceTests_testScanFileTree - 2017.11.24 at 03h 04m 24s.xml">
-      <configuration name="MediaImporterServiceTests.testScanFileTree" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersistenceTests_testSaveImage - 2017.11.24 at 02h 07m 21s.xml">
-      <configuration name="PersistenceTests.testSaveImage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersistenceTests_testSaveImage - 2017.11.24 at 02h 08m 48s.xml">
-      <configuration name="PersistenceTests.testSaveImage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersistenceTests_testSaveImage - 2017.11.24 at 02h 11m 01s.xml">
-      <configuration name="PersistenceTests.testSaveImage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersistenceTests_testSaveImage - 2017.11.24 at 02h 47m 52s.xml">
-      <configuration name="PersistenceTests.testSaveImage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersistenceTests_testSaveImage - 2017.11.24 at 02h 48m 55s.xml">
+    <history-entry file="PersistenceTests_testSaveImage - 2017.11.25 at 19h 28m 46s.xml">
       <configuration name="PersistenceTests.testSaveImage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39529000" />
+    <option name="totallyTimeSpent" value="103076000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="1" width="1936" height="1176" extended-state="0" />
+    <frame x="2300" y="57" width="1936" height="1176" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45158198" sideWeight="0.29637527" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14978679" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17110874" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14232409" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3988495" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25982744" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37104505" sideWeight="0.7036247" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30680728" sideWeight="0.7036247" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29051173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29530916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -747,25 +821,31 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java</url>
-          <line>23</line>
+          <line>25</line>
           <properties />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/MediaImporterService.java</url>
-          <line>23</line>
-          <properties field="logger" class="org.kd1sgr.mediamagic.services.MediaImporterService" />
-          <option name="timeStamp" value="1" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageService.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageService.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java</url>
-          <line>26</line>
-          <properties class="org.kd1sgr.mediamagic.services.PersistenceTests" method="testSaveImage">
+          <url>file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageServiceTests.java</url>
+          <line>27</line>
+          <properties class="org.kd1sgr.mediamagic.services.ImageServiceTests" method="testSaveAndFindImages">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -840,7 +920,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageServiceTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="87" lean-forward="false" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
@@ -919,33 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/resources/RsResourceLibraryImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -972,42 +1025,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/repository/ImageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.M6/spring-boot-autoconfigure-2.0.0.M6-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="130" column="50" lean-forward="false" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OtherImageEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OrientationVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/MediaEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1020,74 +1041,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/rest/view/GreetingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OtherImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#214#215#0" expanded="false" />
+            <element signature="e#293#294#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.1.RELEASE/spring-web-5.0.1.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/Media.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" column="80" lean-forward="false" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="79" />
+        <state relative-caret-position="331">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ResolutionVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="582">
+          <caret line="54" column="79" lean-forward="true" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/PersistenceTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/CameraImageMediaEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageMediaEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/repository/ImageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="822">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1096,10 +1182,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/MediaImporterService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-818">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="-1181">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageSenderServiceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="81" lean-forward="false" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/ImageServiceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/kd1sgr/mediamagic/services/MediaImporterServiceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-487">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/ImageSize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/model/OrientationVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/controllers/rest/LibraryImageResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/services/ImageSenderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kd1sgr/mediamagic/controllers/view/LibraryImageViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="48" column="88" lean-forward="false" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/LibraryImageView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-946">
+          <caret line="206" column="107" lean-forward="true" selection-start-line="206" selection-start-column="107" selection-end-line="206" selection-end-column="107" />
+          <folding>
+            <marker date="1511707696284" expanded="true" signature="2636:2642" ph="July 1901" />
+            <marker date="1511707696284" expanded="true" signature="4600:4613" ph="abc" />
+            <marker date="1511707696284" expanded="true" signature="5035:5046" ph="Simon" />
+            <marker date="1511707696284" expanded="true" signature="5154:5165" ph="SimonsCamera" />
+            <marker date="1511707696284" expanded="true" signature="5273:5288" ph="1000 x 1000" />
           </folding>
         </state>
       </provider>
@@ -1110,10 +1288,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>MediaMagic:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1121,7 +1301,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1136,7 +1316,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.23070018" />
               </list>
             </option>
           </splitter-proportions>
@@ -1148,7 +1328,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.23070018" />
               </list>
             </option>
           </splitter-proportions>

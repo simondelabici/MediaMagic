@@ -1,0 +1,297 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+   <link rel="stylesheet" th:href="@{/css/styles.css}"  href="../static/css/styles.css" />
+
+   <link rel="apple-touch-icon" sizes="180x180"    href="../static/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+   <title>Library Image View</title>
+
+   <style type="text/css">
+      body {
+         background-color: black;
+      }
+
+      #banner h1 {
+         color: white;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      #sidebar1 {
+         display: table-cell;
+         min-width: 100px;
+         padding-left: 50px;
+         padding-right: 20px;
+         vertical-align: top;
+      }
+
+      #nav {
+         position: absolute;
+         left: 50px;
+         top: 150px;
+         width: 120px;
+      }
+
+      #rotate {
+         position: absolute;
+         left: 50px;
+         top: 240px;
+         width: 120px;
+      }
+
+      #download {
+         position: absolute;
+         left: 50px;
+         top: 350px;
+         width: 120px;
+      }
+
+      #delete {
+         position: absolute;
+         left: 50px;
+         top: 440px;
+         width: 120px;
+      }
+
+      #info {
+         position: absolute;
+         left: 50px;
+         top: 500px;
+         width: 120px;
+      }
+
+      button {
+         width: 100px;
+      }
+
+      label {
+         width: 100px;
+         color: white;
+      }
+
+      #sidebar2 {
+         display: table-cell;
+         min-width: 100px;
+         padding-left: 20px;
+         padding-right: 50px;
+         vertical-align: top;
+      }
+
+      #mainImageOuterHolder {
+         display: table-cell;
+         vertical-align: top;
+         width: 100%;
+      }
+
+      #mainImageInnerHolder {
+         width: 85%;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      #mainImageInnerHolder img {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      .thumbnailHolder {
+         display: table-cell;
+         min-width: 100px;
+      }
+
+      .noImage {
+         display: table-cell;
+         height: 75px;
+         vertical-align: middle;
+         text-align: center;
+         background-color: pink;
+      }
+   </style>
+
+</head>
+
+<body>
+
+<noscript>
+   <p>"This page requires a Javascript-enabled web browser."</p>
+</noscript>
+
+<div id="banner">
+   <!--/*@thymesVar id="banner" type="java"*/-->
+   <h1 th:text="${banner}">November 2017</h1>
+</div>
+
+<div id="sidebar1">
+   <div class="thumbnailHolder" id="prevImageHolder" title="Previous">
+      <!--/*@thymesVar id="year" type="java"*/-->
+      <!--/*@thymesVar id="month" type="java"*/-->
+      <!--/*@thymesVar id="previousImageIndex" type="java"*/-->
+      <!--/*@thymesVar id="previousImageId" type="java"*/-->
+      <a th:if="${previousImageId != null}" th:href="@{|/view/library/image/by_date/${year}/${month}/${previousImageIndex}}">
+         <img width="100%" title="Previous" alt="Previous"
+              th:src="@{|/resource/library/image/${previousImageId}(size='THUMBNAIL')}"/>
+      </a>
+      <div th:if="${previousImageId == null}" class="noImage">No more images</div>
+   </div>
+
+   <div id="rotate">
+     <!-- <th:if = "${ pageContext.request.isUserInRole( 'FAMILY' ) }"> -->
+         <button type="button" onclick="sendRotateRequest( 'ROTATE_NONE' );" name="orientation" value="ROTATE_NONE">No
+            Rotate
+         </button>
+         <button type="button" onclick="sendRotateRequest( 'ROTATE_ANTICLOCKWISE_90' );" name="orientation"
+                 value="ROTATE_ANTICLOCKWISE_90">Rotate
+            Left
+         </button>
+         <button type="button" onclick="sendRotateRequest( 'ROTATE_CLOCKWISE_90' );" name="orientation"
+                 value="ROTATE_CLOCKWISE_90">Rotate
+            Right
+         </button>
+         <button type="button" onclick="sendRotateRequest( 'ROTATE_180' );" name="orientation" value="ROTATE_180">Rotate
+            180
+         </button>
+      <!-- </th:if> -->
+   </div>
+
+   <div id="nav">
+      <button onclick="viewThumbnails()">Thumbnails</button>
+      <button onclick="viewSlideshow()">Slideshow</button>
+
+      <!--
+      <th:if ="{ pageContext.request.isUserInRole( 'FAMILY' ) }">
+         <button onclick="chooseNewDate()">Quit</button>
+      </th:if> -->
+   </div>
+
+   <div id="download">
+      <a th:href="@{/resource/library/image/{cur}(size='RAW',cur=#{props.current})}"
+         download="${props.imageId}">
+         <button>Download Full Size Image</button>
+      </a>
+   </div>
+
+   <div id="delete">
+      <!--
+      <th:if ="${ pageContext.request.isUserInRole( 'ADMIN' ) }"> -->
+         <button onclick="sendDeleteRequest()">Delete Image</button>
+      <!-- </th:if> -->
+   </div>
+
+   <div id="info">
+      <!--/*@thymesVar id="cameraMaker" type="java"*/-->
+      <label th:text="${cameraMaker}" >Panasonic</label> <br>
+      <!--/*@thymesVar id="cameraModel" type="java"*/-->
+      <label th:text="${cameraModel}" >TZ101</label> <br>
+      <!--/*@thymesVar id="imageResolution" type="java"*/-->
+      <label th:text="${imageResolution}" >2000 x 2000</label> <br>
+   </div>
+</div>
+
+<div id="mainImageOuterHolder">
+   <div id="mainImageInnerHolder">
+      <!--/*@thymesVar id="currentImageId" type="java"*/-->
+      <!--/*@thymesVar id="currentImageFilename" type="java"*/-->
+      <!--/*@thymesVar id="orientation" type="java"*/-->
+      <img th:if="${ orientation =='ROTATE_NONE' || orientation == 'ROTATE_180'}"
+           id="mainImageLandscape" width="100%" th:title="${currentImageFilename}" th:alt="${currentImageFilename}"
+           th:src="@{|/resource/library/image/${currentImageId}(size='FULL',orientation=${orientation})}"/>
+      <img th:unless="${ orientation =='ROTATE_NONE' || orientation == 'ROTATE_180'}"
+           id="mainImagePortrait" width="60%" th:title="${currentImageFilename}" th:alt="${currentImageFilename}"
+           th:src="@{|/resource/library/image/${currentImageId}(size='FULL',orientation=${orientation})}"/>
+   </div>
+</div>
+
+<div id="sidebar2">
+   <div class="thumbnailHolder" id="nextImageHolder" title="Next">
+       <!--/*@thymesVar id="year" type="java"*/-->
+       <!--/*@thymesVar id="month" type="java"*/-->
+       <!--/*@thymesVar id="nextImageIndex" type="java"*/-->
+       <!--/*@thymesVar id="nextImageId" type="java"*/-->
+       <a th:if="${nextImageId != null}" th:href="@{|/view/library/image/by_date/${year}/${month}/${nextImageIndex}}">
+           <img width="100%" title="Next" alt="Next"
+           th:src="@{|/resource/library/image/${nextImageId}(size='THUMBNAIL')}"/>
+       </a>
+       <div th:if="${nextImageId == null}" class="noImage">No more images</div>
+   </div>
+</div>
+
+
+<script type="text/javascript">
+    var xmlHttp;
+    var newOrientation;
+
+    function createXMLHttpRequest() {
+        if (window.ActiveXObject) {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHttp");
+        }
+        else if (window.XMLHttpRequest) {
+            xmlHttp = new XMLHttpRequest();
+        }
+    }
+
+    function handleRotateResponse() {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            window.location.reload(true);
+        }
+    }
+
+    function handleDeleteResponse() {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            alert("delete confirmed");
+            window.location.reload(true);
+        }
+    }
+
+    function sendRotateRequest(orientation) {
+        newOrientation = orientation;
+        var url = "${pageContext.servletContext.contextPath}/resource/library/image/${props.current}";
+        var queryString = "?orientation=" + orientation;
+        createXMLHttpRequest();
+        xmlHttp.open("PUT", url + queryString, true);
+        xmlHttp.onreadystatechange = handleRotateResponse;
+        xmlHttp.send("");
+    }
+
+
+    function viewThumbnails() {
+        window.location.href = "@{/${props.thumbsURI}";
+    }
+
+    function viewSlideshow() {
+        var currentUri = window.location.href;
+        window.location.href = currentUri.replace("image", "slideshow");
+    }
+
+    function chooseNewDate() {
+        window.location.href = "${pageContext.servletContext.contextPath}/${props.quitURI}";
+    }
+
+    function sendDeleteRequest() {
+        var r = confirm("Please confirm that you wish to delete this image !");
+        if (r != true) {
+            return;
+        }
+
+        var imageId = "${props.current}";
+        alert("Deleting library image:" + imageId + " from library.");
+        var url = "${pageContext.servletContext.contextPath}/resource/library/image/" + imageId;
+        var body = "";
+        createXMLHttpRequest();
+        xmlHttp.open("DELETE", url, true);
+        xmlHttp.onreadystatechange = handleDeleteResponse;
+        xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        alert("sending HTTP DELETE request with body: " + body + "to: " + url);
+        xmlHttp.send(body);
+    }
+
+</script>
+
+</body>
+</html>

@@ -52,9 +52,6 @@ public class ResolutionVO {
 
     @Override
     public String toString() {
-        return "ResolutionVO{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return x.replaceAll("[^0-9]", "") + " x " + y.replaceAll("[^0-9]", "");
     }
 }

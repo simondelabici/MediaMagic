@@ -3,7 +3,7 @@ package org.kd1sgr.mediamagic.model;
 
 import net.jcip.annotations.Immutable;
 
-import javax.persistence.*;
+import javax.persistence.Embeddable;
 
 @Immutable
 @Embeddable
@@ -16,6 +16,14 @@ public class CameraVO {
     public static CameraVO of( String make, String model ) { return new CameraVO( make, model ); }
 
     private CameraVO() { this.make = ""; this.model= ""; }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
 
     public CameraVO(String make, String model )
     {

@@ -17,7 +17,6 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 
-
 @Service
 public class MediaImporterService {
 
@@ -26,22 +25,32 @@ public class MediaImporterService {
    @Autowired
    private ImageService imageService;
 
-   public void scanFileTree( Path rootDirectory ) throws IOException {
+   public MediaImporterService() {
+      logger.info( "ImageSenderService constructed: " + this );
+   }
 
-      Files.walk( rootDirectory )
-              .filter(p -> p.toString().endsWith(".jpg"))
-              .forEach( p -> importToLibrary( p ) );
+   public void scanFileTree( Path rootDirectory ) {
+
+      try {
+         Files.walk(rootDirectory)
+                 .filter(p -> p.toString().endsWith(".jpg"))
+                 .forEach(p -> importToLibrary(p));
+      }
+      catch (IOException ex)
+      {
+         logger.error( "Exception scanning file tree\n" + ex.getLocalizedMessage(), ex );
+      }
    }
 
    private void importToLibrary( Path imagePath )
    {
-      logger.info( "START ************************************************************************************" );
+      logger.debug( "START ************************************************************************************" );
 
       Map<String,String> metaDataMap = this.extractMetadata( imagePath.toFile() );
 
       for ( String entry : metaDataMap.values() )
       {
-         logger.info( entry );
+         logger.debug( entry );
       }
 
 
@@ -55,25 +64,26 @@ public class MediaImporterService {
       String make = metaDataMap.getOrDefault( "Make", "Unknown" );
       String model = metaDataMap.getOrDefault( "Model", "Unknown" );
 
-      ImageMediaEntity image;
+      Image image;
       if (metaDataMap.size() == 0 )
       {
-         image = new OtherImageEntity( imagePath.toFile(), ResolutionVO.UNKOWN, OrientationVO.ROTATE_NONE);
+         image = new OtherImage( imagePath.toFile(), ResolutionVO.UNKOWN, OrientationVO.ROTATE_NONE);
          logger.info( "Importing new image: " + image );
-         imageService.saveOtherImage( (OtherImageEntity) image);
+         //imageService.saveOtherImage( (OtherImage) image);
       }
       else
       {
-         image = new CameraImageMediaEntity( imagePath.toFile(),
+         image = new CameraImage( imagePath.toFile(),
                  resolutionVO,
                  OrientationVO.ROTATE_NONE,
                  CameraVO.of( make, model ),
                  aperture, fNo, shutterSpeed, zoom );
 
          logger.info( "Importing new camera image: " + image );
-         imageService.saveCameraImage((CameraImageMediaEntity) image);
+         String imageId = imageService.saveCameraImage((CameraImage) image);
+         logger.info( "Image was assigned id: " + imageId );
       }
-      logger.info( "END **************************************************************************************" );
+      logger.debug( "END **************************************************************************************" );
 
    }
 
@@ -92,7 +102,7 @@ public class MediaImporterService {
       final Metadata metadata;
       final Map<String, String> map = new HashMap<>();
 
-      logger.info( "Reading metadata from image file: '" + this + "'..." );
+      logger.debug( "Reading metadata from image file: '" + this + "'..." );
       try
       {
          metadata = ImageMetadataReader.readMetadata( filename );
@@ -107,9 +117,12 @@ public class MediaImporterService {
       {
          for ( Tag tag : directory.getTags() )
          {
-            // TODO - clean up this ugly commenting out
-            //Message.INFO( "Directory = " + directory.getName() + "; TagName = " + tag.getTagName() + "; TagDescription = " + tag.getDescription() );
-            map.put( tag.getTagName(), tag.getDescription() );
+            logger.debug( "Directory = " + directory.getName() + "; TagName = " + tag.getTagName() + "; TagDescription = " + tag.getDescription() );
+
+            if ( tag.getDescription() != null ) {
+               map.put(tag.getTagName().trim(), tag.getDescription().trim());
+            }
+
          }
          if ( directory.hasErrors() )
          {
@@ -119,7 +132,7 @@ public class MediaImporterService {
             }
          }
       }
-      logger.info( "Reading metadata - DONE" );
+      logger.debug( "Reading metadata - DONE" );
       return map;
    }
 

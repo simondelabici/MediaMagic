@@ -21,6 +21,8 @@ public class MediaImporterServiceTests {
     @Test
     public void testScanFileTree() throws IOException
     {
-        mediaImporterService.scanFileTree( Paths.get( "src/test/resources/org/kd1sgr/mediamagic/services" ) );
+        mediaImporterService.scanFileTree( Paths.get( "D:\\suki\\our_photos\\2017\\2017_01" ) );
+
+//        mediaImporterService.scanFileTree( Paths.get( "src/test/rest/org/kd1sgr/mediamagic/services" ) );
     }
 }
