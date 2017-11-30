@@ -3,7 +3,6 @@ package org.kd1sgr.mediamagic.controllers.view;
 import net.jcip.annotations.Immutable;
 import org.apache.commons.lang3.Validate;
 import org.kd1sgr.mediamagic.model.CameraImage;
-import org.kd1sgr.mediamagic.model.OrientationVO;
 import org.kd1sgr.mediamagic.services.ImageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

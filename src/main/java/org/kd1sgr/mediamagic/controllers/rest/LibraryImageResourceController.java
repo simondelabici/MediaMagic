@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
@@ -40,20 +41,39 @@ public class LibraryImageResourceController
                                 @RequestParam( value = "orientation", required = false) String orientationOrNull,
                                 HttpServletResponse response ) throws IOException
     {
-       final ImageSize imageSize = ( sizeOrNull == null ) || ImageSize.isKnownValue( sizeOrNull ) ?
-                       ImageSize.SIZE_DEFAULT : ImageSize.instanceOf( sizeOrNull );
+       final ImageSize imageSize = ( sizeOrNull == null ) || ( ! ImageSize.isKnownValue( sizeOrNull )  ) ?
+                 ImageSize.SIZE_DEFAULT : ImageSize.instanceOf( sizeOrNull );
 
-       final OrientationVO orientationVO = ( orientationOrNull == null ) ||
-                           OrientationVO.isKnownValue( orientationOrNull ) ?
-                           OrientationVO.ROTATE_NONE : OrientationVO.valueOf( orientationOrNull );
-
+       final OrientationVO orientationVO = ( orientationOrNull == null ) || ( ! OrientationVO.isKnownValue( orientationOrNull ) )?
+                 OrientationVO.ROTATE_NONE : OrientationVO.valueOf( orientationOrNull );
 
        logger.info( "doGet called with path imageId= '" + imageId + "', size='" + imageSize + "', orientation='" + orientationVO + "'" );
 
        Optional<CameraImage> opt = imageService.getCameraImage( imageId );
        if ( opt.isPresent() )
        {
-           imageSenderService.sendFullSizeImageDataToOutputStream( opt.get(), response.getOutputStream());
+          final CameraImage image = opt.get();
+          final OutputStream os = response.getOutputStream();
+
+          switch ( imageSize )
+          {
+             case SIZE_RAW:
+                imageSenderService.sendRawImageDataToOutputStream( image, os );
+                break;
+
+             case SIZE_SLIDE:
+                imageSenderService.sendSlideshowImageDataToOutputStream( image, os );
+                break;
+
+             case SIZE_THUMBNAIL:
+                imageSenderService.sendThumbnailImageDataToOutputStream( image, os );
+                break;
+
+             case SIZE_DEFAULT:
+             case SIZE_FULL:
+                imageSenderService.sendFullSizeImageDataToOutputStream( image, os );
+                break;
+          }
        }
 
        // Set the Max Age header to cache for one year.
